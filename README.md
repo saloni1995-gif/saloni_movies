@@ -1,26 +1,37 @@
-# Your/Dev Recruitment Process 2020 - Android Developer
+Project Overview
+This project aims to demonstrate the usage of Android Architecture Components and how this components can be used in an application with a MVVM architecture in Kotlin
 
-O desafio foi desenvolvido em Kotlin e consistia em uma aplicação para a leitura de críticas de diversos filmes, utilizando a API do [The New York Times](https://developer.nytimes.com).
+Project Description
+First of all, I would like to show how I made the packages structure of the project For achieving The separation of concerns
 
-## ⛏️ Arquitetura 
+Presentation layer
+will include normal Activities , Fragments and ViewModels which will only handle rendering views and will follow MVVM pattern.
 
-- MVVM (Model–View–ViewModel)
+Data layer
+With the Repositories.
 
-A arquitetura utilizada no projeto foi o MVVM, pois vem sendo fortemente adotada pela comunidade de Devs Android, além disso, muitos recursos mais recentes do Android, trabalham muito bem em conjunto com essa arquitetura.
+Let's explore Architecture Components
+According to Android Documentation, Architecture Components are a set of Android libraries for structuring our app in a way that is robust, testable, and maintainable. 
 
-## 📝 Recursos usados 
+UI Controllers
+are activities or fragments. The only job of UI controllers is to know how to display data and pass on UI events, such as the user pressing a button. UI Controllers neither contain the UI data, nor directly manipulate data.
 
-- Retrofit
-- Moshi
-- Room
-- Navigation Components
-- ViewModel
-- LiveData
+ViewModels and LiveData
+These classes represent all of the data needed for the UI to display. 
 
-## ✍️ Autor
+Repository
+This class is the single source of truth for all of our app's data and acts as a clean API for the UI to communicate with. ViewModels simply request data from the repository. They do not need to worry about whether the repository should load from the database or network, or how or when to persist the data. The repository manages all of this. As part of this responsibility, the repository is a mediator between the different data sources.
 
-**Lucas Alvarenga - Android Developer**
+Remote Network Data Source
+Manages data from a remote data source, such as the internet.
 
-- Meu Portfólio: https://www.alvarenga.dev/
-- Instagram: [@Alvarenga.dev](https://www.instagram.com/alvarenga.dev/)
-- Github: [@Alvarenga-Dev](https://github.com/Alvarenga-Dev)
+Model - Manages local data stored in the database.
+
+Used libraries:
+Live data
+RxAndroid
+Room
+Retrofit2
+Android architecture components
+Room
+Junit
