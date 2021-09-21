@@ -9,9 +9,6 @@ These classes represent all of the data needed for the UI to display.
 Repository
 This class is the single source of truth for all of our app's data and acts as a clean API for the UI to communicate with. ViewModels simply request data from the repository. They do not need to worry about whether the repository should load from the database or network, or how or when to persist the data. The repository manages all of this. As part of this responsibility, the repository is a mediator between the different data sources.
 
-Remote Network Data Source
-Manages data from a remote data source, such as the internet.
-
 Model - Manages local data stored in the database.
 
 Used libraries:
