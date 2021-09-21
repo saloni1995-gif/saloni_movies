@@ -1,4 +1,4 @@
-For this projects I have used following Architecture Components
+For this projects I have used following Architecture Components :
 
 UI Controllers
 are activities or fragments. The only job of UI controllers is to know how to display data and pass on UI events, such as the user pressing a button. UI Controllers neither contain the UI data, nor directly manipulate data.
@@ -15,10 +15,10 @@ Manages data from a remote data source, such as the internet.
 Model - Manages local data stored in the database.
 
 Used libraries:
-Live data
-RxAndroid
-Room
-Retrofit2
-Android architecture components
-Room
-Junit
+Live data, 
+RxAndroid, 
+Room, 
+Retrofit2, 
+Android architecture, components, 
+Room, 
+Junit.
