@@ -1,17 +1,4 @@
-Project Overview
-This project aims to demonstrate the usage of Android Architecture Components and how this components can be used in an application with a MVVM architecture in Kotlin
-
-Project Description
-First of all, I would like to show how I made the packages structure of the project For achieving The separation of concerns
-
-Presentation layer
-will include normal Activities , Fragments and ViewModels which will only handle rendering views and will follow MVVM pattern.
-
-Data layer
-With the Repositories.
-
-Let's explore Architecture Components
-According to Android Documentation, Architecture Components are a set of Android libraries for structuring our app in a way that is robust, testable, and maintainable. 
+For this projects I have used following Architecture Components
 
 UI Controllers
 are activities or fragments. The only job of UI controllers is to know how to display data and pass on UI events, such as the user pressing a button. UI Controllers neither contain the UI data, nor directly manipulate data.
