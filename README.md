@@ -1,26 +1,21 @@
-# Your/Dev Recruitment Process 2020 - Android Developer
+For this projects I have used following Architecture Components :
 
-O desafio foi desenvolvido em Kotlin e consistia em uma aplicação para a leitura de críticas de diversos filmes, utilizando a API do [The New York Times](https://developer.nytimes.com).
+UI Controllers
+are activities or fragments. The only job of UI controllers is to know how to display data and pass on UI events, such as the user pressing a button. UI Controllers neither contain the UI data, nor directly manipulate data.
 
-## ⛏️ Arquitetura 
+ViewModels and LiveData
+These classes represent all of the data needed for the UI to display. 
 
-- MVVM (Model–View–ViewModel)
+Repository
+This class is the single source of truth for all of our app's data and acts as a clean API for the UI to communicate with. ViewModels simply request data from the repository. They do not need to worry about whether the repository should load from the database or network, or how or when to persist the data. The repository manages all of this. As part of this responsibility, the repository is a mediator between the different data sources.
 
-A arquitetura utilizada no projeto foi o MVVM, pois vem sendo fortemente adotada pela comunidade de Devs Android, além disso, muitos recursos mais recentes do Android, trabalham muito bem em conjunto com essa arquitetura.
+Model - Manages local data stored in the database.
 
-## 📝 Recursos usados 
-
-- Retrofit
-- Moshi
-- Room
-- Navigation Components
-- ViewModel
-- LiveData
-
-## ✍️ Autor
-
-**Lucas Alvarenga - Android Developer**
-
-- Meu Portfólio: https://www.alvarenga.dev/
-- Instagram: [@Alvarenga.dev](https://www.instagram.com/alvarenga.dev/)
-- Github: [@Alvarenga-Dev](https://github.com/Alvarenga-Dev)
+Used libraries:
+Live data, 
+RxAndroid, 
+Room, 
+Retrofit2, 
+Android architecture, components, 
+Room, 
+Junit.
